@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uter Ayoo | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Floating Particles Background -->
+  <div id="particles"></div>
+
+  <!-- Floating Decorative Shapes -->
+  <div class="deco-shape shape1"></div>
+  <div class="deco-shape shape2"></div>
+  <div class="deco-shape shape3"></div>
+  <div class="deco-shape shape4"></div>
+  <div class="deco-shape shape5"></div>
+
+  <!-- Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <div class="music-icon" id="musicIcon">🎵</div>
+    <div class="music-info">
+      <span class="music-label">Background Music</span>
+      <div class="music-bars">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <button class="music-btn" id="musicToggle">▶ Play</button>
+    <audio id="bgMusic" loop>
+      <!-- Add your own music file here: <source src="your-music.mp3" type="audio/mpeg"> -->
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="avatar-ring">
+        <div class="avatar-inner">UA</div>
+      </div>
+      <h1 class="hero-name">
+        <span id="typedName"></span><span class="cursor">|</span>
+      </h1>
+      <p class="hero-subtitle">Student Developer · Designer · Problem Solver</p>
+      <p class="hero-intro">Welcome to my professional portfolio — a showcase of creativity, code, and growth.</p>
+      <div class="hero-badges">
+        <span class="badge">🚀 Coder</span>
+        <span class="badge">🎨 Designer</span>
+        <span class="badge">💡 Creator</span>
+        <span class="badge">🎮 Gamer</span>
+      </div>
+      <a href="#about" class="hero-cta">Explore My Work ↓</a>
+    </div>
+    <div class="star star1">★</div>
+    <div class="star star2">✦</div>
+    <div class="star star3">★</div>
+    <div class="star star4">✦</div>
+    <div class="star star5">★</div>
+  </header>
+
+  <!-- Sticky Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">UA</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#game">Game</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">👤</div>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hi! My name is <strong>Uter Ayoo</strong> and I am a passionate student at The Village School who loves coding, digital design, and creative technology. I enjoy building projects that combine problem-solving, logic, and imagination.
+          </p>
+          <p style="margin-top:12px;">
+            This portfolio showcases my work and growth as a student creator. I am always learning something new and pushing myself to build bigger and better things.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1</div>
+            <div class="stat-label">School</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">🚀</div>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-emoji">🎮</div>
+          <h3>Scratch Game Project</h3>
+          <p>A game I designed using logic, animation, and interactive controls. I built custom sprites and programmed all the game rules from scratch.</p>
+          <div class="project-tools">
+            <span class="tool-tag">Scratch</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-emoji">🐍</div>
+          <h3>Python Program</h3>
+          <p>A coding project that helped me practice variables, logic, loops, and debugging. I wrote clean, working code that solved a real problem.</p>
+          <div class="project-tools">
+            <span class="tool-tag">Python</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-emoji">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>A personal website created to present my skills, projects, and goals. Designed and built with HTML, CSS, and JavaScript.</p>
+          <div class="project-tools">
+            <span class="tool-tag">HTML</span>
+            <span class="tool-tag">CSS</span>
+            <span class="tool-tag">JavaScript</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">⚡</div>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-top"><span>HTML</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>CSS</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Python</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Scratch</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Problem Solving</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div class="skills-tags">
+        <span>Debugging</span>
+        <span>Creative Design</span>
+        <span>Critical Thinking</span>
+        <span>Teamwork</span>
+        <span>Presentation</span>
+        <span>Digital Tools</span>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Experience & Growth</h2>
+      </div>
+      <p>During this course, I learned how to plan projects, test ideas, fix errors, and improve my work over time. I practiced explaining my thinking and presenting my projects professionally.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">🎯</div>
+          <div class="timeline-content">
+            <h4>Built Coding Projects</h4>
+            <p>Used multiple digital tools to create complete, working projects from start to finish.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🔧</div>
+          <div class="timeline-content">
+            <h4>Learned to Debug</h4>
+            <p>Developed the skill to identify, analyze, and fix errors in code efficiently.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🎤</div>
+          <div class="timeline-content">
+            <h4>Practiced Presenting</h4>
+            <p>Learned how to explain and present my work clearly to others in a professional way.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🧠</div>
+          <div class="timeline-content">
+            <h4>Grew as a Problem Solver</h4>
+            <p>Developed stronger problem-solving and design thinking skills throughout the year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">🎮</div>
+        <h2>Click Challenge Game</h2>
+      </div>
+      <p>Try to click the moving target as many times as possible before time runs out. Good luck!</p>
+      <div class="game-panel">
+        <div class="game-stats">
+          <div class="stat-box">
+            <div class="stat-label-g">Score</div>
+            <div class="stat-value" id="score">0</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label-g">Time Left</div>
+            <div class="stat-value" id="time">15</div>
+          </div>
+        </div>
+        <button id="start-btn" class="game-start-btn">▶ Start Game</button>
+        <div id="game-area">
+          <div id="target">🎯</div>
+          <div id="game-msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">🌟</div>
+        <h2>My Goals</h2>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card">
+          <div class="goal-icon">💻</div>
+          <h4>Learn More Languages</h4>
+          <p>Continue learning JavaScript, Python, and explore new programming languages.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🎮</div>
+          <h4>Build a Real Game</h4>
+          <p>Create a fully polished game that other people can enjoy playing.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🌐</div>
+          <h4>Launch a Website</h4>
+          <p>Build and publish a live website for a real purpose or audience.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🏢</div>
+          <h4>Explore Tech Careers</h4>
+          <p>Discover careers in technology, software development, and digital design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <div class="section-header">
+        <div class="section-icon">📬</div>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-card">
+          <div class="contact-icon">👤</div>
+          <div class="contact-info">
+            <div class="contact-label">Name</div>
+            <div class="contact-value">Uter Ayoo</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">uter_ayoo@s.thevillageschool.com</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🏫</div>
+          <div class="contact-info">
+            <div class="contact-label">School</div>
+            <div class="contact-value">The Village School</div>
+          </div>
+        </div>
+      </div>
+      <p class="contact-note">Feel free to reach out — I am always happy to connect and share my work!</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-deco">✦ ★ ✦ ★ ✦</div>
+    <p class="footer-name">Uter Ayoo</p>
+    <p>Student Developer Portfolio · The Village School</p>
+    <p class="footer-email">uter_ayoo@s.thevillageschool.com</p>
+    <div class="footer-deco">✦ ★ ✦ ★ ✦</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
