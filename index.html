@@ -22,11 +22,11 @@
   <!-- Music Player -->
   <div class="music-player" id="musicPlayer">
     <div class="music-icon-img">
-      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=40&h=40&fit=crop&crop=center" alt="Music" class="music-note-img" />
+      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=40&h=40&fit=crop&crop=center" alt="Music" class="music-note-img" id="albumArt" />
     </div>
     <div class="music-info">
-      <span class="music-label" id="music-track-name">SoundHelix Song 1</span>
-      <div class="music-bars">
+      <span class="music-label" id="music-track-name">Chill Vibes</span>
+      <div class="music-bars" id="musicBars">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
@@ -53,22 +53,18 @@
       <p class="hero-subtitle">Student Developer · Designer · Problem Solver</p>
       <p class="hero-intro">Welcome to my professional portfolio — a showcase of creativity, code, and growth.</p>
       <div class="hero-badges">
-        <!-- Coder badge with code image -->
         <span class="badge badge-img">
           <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=22&h=22&fit=crop&crop=center" alt="Coder" />
           Coder
         </span>
-        <!-- Designer badge with art image -->
         <span class="badge badge-img">
           <img src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=22&h=22&fit=crop&crop=center" alt="Designer" />
           Designer
         </span>
-        <!-- Creator badge with lightbulb image -->
         <span class="badge badge-img">
           <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=22&h=22&fit=crop&crop=center" alt="Creator" />
           Creator
         </span>
-        <!-- Gamer badge with controller image -->
         <span class="badge badge-img">
           <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=22&h=22&fit=crop&crop=center" alt="Gamer" />
           Gamer
@@ -105,7 +101,6 @@
     <!-- About Section -->
     <section id="about" class="reveal">
       <div class="section-header">
-        <!-- Person/profile icon image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=48&h=48&fit=crop&crop=face" alt="About" class="section-icon-img" />
         </div>
@@ -140,7 +135,6 @@
     <!-- Projects Section -->
     <section id="projects" class="reveal">
       <div class="section-header">
-        <!-- Rocket / launch image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=48&h=48&fit=crop&crop=center" alt="Projects" class="section-icon-img" />
         </div>
@@ -148,16 +142,10 @@
       </div>
       <div class="project-grid">
 
-        <!-- Scratch Game Project -->
         <div class="project-card">
           <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=420&h=200&fit=crop&crop=center"
-              alt="Scratch Game Project"
-              class="project-img"
-            />
+            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=420&h=200&fit=crop&crop=center" alt="Scratch Game Project" class="project-img" />
             <div class="project-img-overlay">
-              <!-- Scratch-style blocks icon overlay -->
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Scratchlogo.svg/220px-Scratchlogo.svg.png" alt="Scratch" class="project-tool-logo" />
             </div>
           </div>
@@ -169,14 +157,9 @@
           <a href="#" class="project-link">View Project →</a>
         </div>
 
-        <!-- Python Program -->
         <div class="project-card">
           <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=420&h=200&fit=crop&crop=center"
-              alt="Python Programming"
-              class="project-img"
-            />
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=420&h=200&fit=crop&crop=center" alt="Python Programming" class="project-img" />
             <div class="project-img-overlay">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png" alt="Python" class="project-tool-logo" />
             </div>
@@ -189,20 +172,12 @@
           <a href="#" class="project-link">View Project →</a>
         </div>
 
-        <!-- Portfolio Website -->
         <div class="project-card">
           <div class="project-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=420&h=200&fit=crop&crop=center"
-              alt="Portfolio Website"
-              class="project-img"
-            />
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=420&h=200&fit=crop&crop=center" alt="Portfolio Website" class="project-img" />
             <div class="project-img-overlay project-img-overlay--multi">
-              <!-- HTML5 logo -->
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/60px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="project-tool-logo project-tool-logo--sm" />
-              <!-- CSS3 logo -->
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/48px-CSS3_logo_and_wordmark.svg.png" alt="CSS" class="project-tool-logo project-tool-logo--sm" />
-              <!-- JS logo -->
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/64px-Unofficial_JavaScript_logo_2.svg.png" alt="JS" class="project-tool-logo project-tool-logo--sm" />
             </div>
           </div>
@@ -215,13 +190,13 @@
           </div>
           <a href="#" class="project-link">View Project →</a>
         </div>
+
       </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="reveal">
       <div class="section-header">
-        <!-- Lightning / energy image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=48&h=48&fit=crop&crop=center" alt="Skills" class="section-icon-img" />
         </div>
@@ -302,7 +277,6 @@
     <!-- Experience Section -->
     <section id="experience" class="reveal">
       <div class="section-header">
-        <!-- Clipboard / work image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=48&h=48&fit=crop&crop=center" alt="Experience" class="section-icon-img" />
         </div>
@@ -310,10 +284,8 @@
       </div>
       <p>During this course, I learned how to plan projects, test ideas, fix errors, and improve my work over time. I practiced explaining my thinking and presenting my projects professionally.</p>
       <div class="timeline">
-
         <div class="timeline-item">
           <div class="timeline-dot">
-            <!-- Coding / laptop image -->
             <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=44&h=44&fit=crop&crop=center" alt="Built Projects" class="timeline-dot-img" />
           </div>
           <div class="timeline-content">
@@ -321,10 +293,8 @@
             <p>Used multiple digital tools to create complete, working projects from start to finish.</p>
           </div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-dot">
-            <!-- Tools / wrench image -->
             <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=44&h=44&fit=crop&crop=center" alt="Debugging" class="timeline-dot-img" />
           </div>
           <div class="timeline-content">
@@ -332,10 +302,8 @@
             <p>Developed the skill to identify, analyze, and fix errors in code efficiently.</p>
           </div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-dot">
-            <!-- Microphone / presenting image -->
             <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=44&h=44&fit=crop&crop=center" alt="Presenting" class="timeline-dot-img" />
           </div>
           <div class="timeline-content">
@@ -343,10 +311,8 @@
             <p>Learned how to explain and present my work clearly to others in a professional way.</p>
           </div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-dot">
-            <!-- Brain / thinking image -->
             <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?w=44&h=44&fit=crop&crop=center" alt="Problem Solver" class="timeline-dot-img" />
           </div>
           <div class="timeline-content">
@@ -354,14 +320,12 @@
             <p>Developed stronger problem-solving and design thinking skills throughout the year.</p>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- Game Section -->
     <section id="game" class="reveal">
       <div class="section-header">
-        <!-- Game controller image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=48&h=48&fit=crop&crop=center" alt="Game" class="section-icon-img" />
         </div>
@@ -381,7 +345,6 @@
         </div>
         <button id="start-btn" class="game-start-btn">&#9654; Start Game</button>
         <div id="game-area">
-          <!-- Bullseye image as target instead of emoji -->
           <div id="target">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kuyper_target.svg/120px-Kuyper_target.svg.png" alt="Target" id="target-img" />
           </div>
@@ -393,14 +356,12 @@
     <!-- Goals Section -->
     <section id="goals" class="reveal">
       <div class="section-header">
-        <!-- Star / goals image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=48&h=48&fit=crop&crop=center" alt="Goals" class="section-icon-img" />
         </div>
         <h2>My Goals</h2>
       </div>
       <div class="goals-grid">
-
         <div class="goal-card">
           <div class="goal-img-wrap">
             <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=220&h=120&fit=crop&crop=center" alt="Learn Languages" class="goal-img" />
@@ -408,7 +369,6 @@
           <h4>Learn More Languages</h4>
           <p>Continue learning JavaScript, Python, and explore new programming languages.</p>
         </div>
-
         <div class="goal-card">
           <div class="goal-img-wrap">
             <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=220&h=120&fit=crop&crop=center" alt="Build a Real Game" class="goal-img" />
@@ -416,7 +376,6 @@
           <h4>Build a Real Game</h4>
           <p>Create a fully polished game that other people can enjoy playing.</p>
         </div>
-
         <div class="goal-card">
           <div class="goal-img-wrap">
             <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=220&h=120&fit=crop&crop=center" alt="Launch a Website" class="goal-img" />
@@ -424,7 +383,6 @@
           <h4>Launch a Website</h4>
           <p>Build and publish a live website for a real purpose or audience.</p>
         </div>
-
         <div class="goal-card">
           <div class="goal-img-wrap">
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=220&h=120&fit=crop&crop=center" alt="Tech Careers" class="goal-img" />
@@ -432,14 +390,12 @@
           <h4>Explore Tech Careers</h4>
           <p>Discover careers in technology, software development, and digital design.</p>
         </div>
-
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="reveal">
       <div class="section-header">
-        <!-- Mailbox / envelope image -->
         <div class="section-icon">
           <img src="https://images.unsplash.com/photo-1526554850534-7c78330d5f90?w=48&h=48&fit=crop&crop=center" alt="Contact" class="section-icon-img" />
         </div>
