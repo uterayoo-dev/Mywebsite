@@ -9,21 +9,16 @@
 </head>
 <body>
 
-  <!-- Floating Particles Background -->
   <div id="particles"></div>
 
-  <!-- Floating Decorative Shapes -->
   <div class="deco-shape shape1"></div>
   <div class="deco-shape shape2"></div>
   <div class="deco-shape shape3"></div>
   <div class="deco-shape shape4"></div>
   <div class="deco-shape shape5"></div>
 
-  <!-- Music Player -->
   <div class="music-player" id="musicPlayer">
-    <div class="music-icon-img">
-      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=40&h=40&fit=crop&crop=center" alt="Music" class="music-note-img" id="albumArt" />
-    </div>
+    <div class="music-icon-img">🎵</div>
     <div class="music-info">
       <span class="music-label" id="music-track-name">Chill Vibes</span>
       <div class="music-bars" id="musicBars">
@@ -31,16 +26,15 @@
       </div>
     </div>
     <div class="music-controls">
-      <button class="music-btn music-prev" id="prevTrack" title="Previous">&#9664;&#9664;</button>
+      <button class="music-btn music-prev" id="prevTrack">&#9664;&#9664;</button>
       <button class="music-btn music-play" id="musicToggle">&#9654; Play</button>
-      <button class="music-btn music-next" id="nextTrack" title="Next">&#9654;&#9654;</button>
+      <button class="music-btn music-next" id="nextTrack">&#9654;&#9654;</button>
     </div>
     <audio id="bgMusic" loop>
       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
     </audio>
   </div>
 
-  <!-- Hero Header -->
   <header class="hero">
     <div class="hero-glow"></div>
     <div class="hero-content">
@@ -53,22 +47,10 @@
       <p class="hero-subtitle">Student Developer · Designer · Problem Solver</p>
       <p class="hero-intro">Welcome to my professional portfolio — a showcase of creativity, code, and growth.</p>
       <div class="hero-badges">
-        <span class="badge badge-img">
-          <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=22&h=22&fit=crop&crop=center" alt="Coder" />
-          Coder
-        </span>
-        <span class="badge badge-img">
-          <img src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=22&h=22&fit=crop&crop=center" alt="Designer" />
-          Designer
-        </span>
-        <span class="badge badge-img">
-          <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=22&h=22&fit=crop&crop=center" alt="Creator" />
-          Creator
-        </span>
-        <span class="badge badge-img">
-          <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=22&h=22&fit=crop&crop=center" alt="Gamer" />
-          Gamer
-        </span>
+        <span class="badge badge-icon"><span class="badge-icon-emoji">💻</span> Coder</span>
+        <span class="badge badge-icon"><span class="badge-icon-emoji">🎨</span> Designer</span>
+        <span class="badge badge-icon"><span class="badge-icon-emoji">🚀</span> Creator</span>
+        <span class="badge badge-icon"><span class="badge-icon-emoji">🎮</span> Gamer</span>
       </div>
       <a href="#about" class="hero-cta">Explore My Work ↓</a>
     </div>
@@ -79,7 +61,6 @@
     <div class="star star5">★</div>
   </header>
 
-  <!-- Sticky Navigation -->
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-logo">UA</span>
@@ -95,25 +76,17 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
   <main class="container">
 
-    <!-- About Section -->
     <section id="about" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=48&h=48&fit=crop&crop=face" alt="About" class="section-icon-img" />
-        </div>
+        <div class="section-icon">👤</div>
         <h2>About Me</h2>
       </div>
       <div class="about-content">
         <div class="about-text">
-          <p>
-            Hi! My name is <strong>Uter Ayoo</strong> and I am a passionate student at The Village School who loves coding, digital design, and creative technology. I enjoy building projects that combine problem-solving, logic, and imagination.
-          </p>
-          <p style="margin-top:12px;">
-            This portfolio showcases my work and growth as a student creator. I am always learning something new and pushing myself to build bigger and better things.
-          </p>
+          <p>Hi! My name is <strong>Uter Ayoo</strong> and I am a passionate student at The Village School who loves coding, digital design, and creative technology. I enjoy building projects that combine problem-solving, logic, and imagination.</p>
+          <p style="margin-top:12px;">This portfolio showcases my work and growth as a student creator. I am always learning something new and pushing myself to build bigger and better things.</p>
         </div>
         <div class="about-stats">
           <div class="stat-card">
@@ -132,21 +105,18 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=48&h=48&fit=crop&crop=center" alt="Projects" class="section-icon-img" />
-        </div>
+        <div class="section-icon">📁</div>
         <h2>Featured Projects</h2>
       </div>
       <div class="project-grid">
 
         <div class="project-card">
           <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=420&h=200&fit=crop&crop=center" alt="Scratch Game Project" class="project-img" />
+            <div class="project-img-placeholder scratch-bg">🎮</div>
             <div class="project-img-overlay">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Scratchlogo.svg/220px-Scratchlogo.svg.png" alt="Scratch" class="project-tool-logo" />
+              <span class="project-tool-tag">Scratch</span>
             </div>
           </div>
           <h3>Scratch Game Project</h3>
@@ -159,9 +129,9 @@
 
         <div class="project-card">
           <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=420&h=200&fit=crop&crop=center" alt="Python Programming" class="project-img" />
+            <div class="project-img-placeholder python-bg">🐍</div>
             <div class="project-img-overlay">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png" alt="Python" class="project-tool-logo" />
+              <span class="project-tool-tag">Python</span>
             </div>
           </div>
           <h3>Python Program</h3>
@@ -174,11 +144,11 @@
 
         <div class="project-card">
           <div class="project-img-wrap">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=420&h=200&fit=crop&crop=center" alt="Portfolio Website" class="project-img" />
-            <div class="project-img-overlay project-img-overlay--multi">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/60px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="project-tool-logo project-tool-logo--sm" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/48px-CSS3_logo_and_wordmark.svg.png" alt="CSS" class="project-tool-logo project-tool-logo--sm" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/64px-Unofficial_JavaScript_logo_2.svg.png" alt="JS" class="project-tool-logo project-tool-logo--sm" />
+            <div class="project-img-placeholder web-bg">🌐</div>
+            <div class="project-img-overlay">
+              <span class="project-tool-tag">HTML</span>
+              <span class="project-tool-tag">CSS</span>
+              <span class="project-tool-tag">JS</span>
             </div>
           </div>
           <h3>Portfolio Website</h3>
@@ -194,71 +164,50 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=48&h=48&fit=crop&crop=center" alt="Skills" class="section-icon-img" />
-        </div>
+        <div class="section-icon">⚡</div>
         <h2>Skills</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/30px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="skill-logo" />
-              HTML
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">🌐</span> HTML</span>
             <span>85%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
         </div>
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/24px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="skill-logo" />
-              CSS
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">🎨</span> CSS</span>
             <span>80%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
         </div>
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/30px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" class="skill-logo" />
-              JavaScript
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">💛</span> JavaScript</span>
             <span>70%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
         </div>
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/30px-Python-logo-notext.svg.png" alt="Python" class="skill-logo" />
-              Python
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">🐍</span> Python</span>
             <span>65%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
         </div>
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Scratchlogo.svg/60px-Scratchlogo.svg.png" alt="Scratch" class="skill-logo" />
-              Scratch
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">🐱</span> Scratch</span>
             <span>90%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
         </div>
         <div class="skill-item">
           <div class="skill-top">
-            <span class="skill-label-wrap">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=30&h=30&fit=crop&crop=center" alt="Problem Solving" class="skill-logo skill-logo--round" />
-              Problem Solving
-            </span>
+            <span class="skill-label-wrap"><span class="skill-emoji">🧠</span> Problem Solving</span>
             <span>88%</span>
           </div>
           <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
@@ -274,64 +223,112 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=48&h=48&fit=crop&crop=center" alt="Experience" class="section-icon-img" />
-        </div>
+        <div class="section-icon">📈</div>
         <h2>Experience &amp; Growth</h2>
       </div>
-      <p>During this course, I learned how to plan projects, test ideas, fix errors, and improve my work over time. I practiced explaining my thinking and presenting my projects professionally.</p>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot">
-            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=44&h=44&fit=crop&crop=center" alt="Built Projects" class="timeline-dot-img" />
+      <p style="color:#94a3b8;margin-bottom:20px;">During this course, I learned how to plan projects, test ideas, fix errors, and improve my work over time.</p>
+
+      <div class="experience-columns">
+
+        <div>
+          <div class="exp-col-title have">
+            <div class="exp-col-title-dot"></div>
+            What I Have
           </div>
-          <div class="timeline-content">
-            <h4>Built Coding Projects</h4>
-            <p>Used multiple digital tools to create complete, working projects from start to finish.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">💻</div>
+              <div class="timeline-content">
+                <h4>Built Coding Projects</h4>
+                <p>Used HTML, CSS, JavaScript, Python, and Scratch to build complete, working projects from start to finish.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">🐛</div>
+              <div class="timeline-content">
+                <h4>Learned to Debug</h4>
+                <p>Developed the skill to identify, analyze, and fix errors in code efficiently and independently.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">🎤</div>
+              <div class="timeline-content">
+                <h4>Practiced Presenting</h4>
+                <p>Learned how to explain and present my work clearly to others in a professional way.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">🧩</div>
+              <div class="timeline-content">
+                <h4>Problem Solving Skills</h4>
+                <p>Grew as a logical thinker — breaking big problems into smaller steps and finding creative solutions.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">🌐</div>
+              <div class="timeline-content">
+                <h4>My Own Portfolio Website</h4>
+                <p>Designed and built this website myself using HTML, CSS, and JavaScript to showcase my work.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=44&h=44&fit=crop&crop=center" alt="Debugging" class="timeline-dot-img" />
+
+        <div>
+          <div class="exp-col-title want">
+            <div class="exp-col-title-dot"></div>
+            What I Want to Get
           </div>
-          <div class="timeline-content">
-            <h4>Learned to Debug</h4>
-            <p>Developed the skill to identify, analyze, and fix errors in code efficiently.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot want-dot">⚛️</div>
+              <div class="timeline-content">
+                <h4>React &amp; Modern Frameworks</h4>
+                <p>Learn React and other modern JavaScript frameworks to build fast, interactive web apps.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot want-dot">🎮</div>
+              <div class="timeline-content">
+                <h4>Game Development Skills</h4>
+                <p>Dive deeper into game development using Unity or Godot to create real, polished games.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot want-dot">🤖</div>
+              <div class="timeline-content">
+                <h4>Artificial Intelligence</h4>
+                <p>Explore machine learning and AI to understand how smart technology works and how to build with it.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot want-dot">📱</div>
+              <div class="timeline-content">
+                <h4>Mobile App Development</h4>
+                <p>Learn to build mobile apps for iOS and Android so my projects can reach anyone, anywhere.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot want-dot">☁️</div>
+              <div class="timeline-content">
+                <h4>Cloud &amp; Deployment</h4>
+                <p>Understand how to host and deploy real projects live on the internet for the world to use.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">
-            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=44&h=44&fit=crop&crop=center" alt="Presenting" class="timeline-dot-img" />
-          </div>
-          <div class="timeline-content">
-            <h4>Practiced Presenting</h4>
-            <p>Learned how to explain and present my work clearly to others in a professional way.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">
-            <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?w=44&h=44&fit=crop&crop=center" alt="Problem Solver" class="timeline-dot-img" />
-          </div>
-          <div class="timeline-content">
-            <h4>Grew as a Problem Solver</h4>
-            <p>Developed stronger problem-solving and design thinking skills throughout the year.</p>
-          </div>
-        </div>
+
       </div>
     </section>
 
-    <!-- Game Section -->
     <section id="game" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=48&h=48&fit=crop&crop=center" alt="Game" class="section-icon-img" />
-        </div>
-        <h2>Click Challenge Game</h2>
+        <div class="section-icon">🚀</div>
+        <h2>Rocket Shooter Game</h2>
       </div>
-      <p>Try to click the moving target as many times as possible before time runs out. Good luck!</p>
+      <p style="color:#94a3b8;margin-bottom:4px;">Move your mouse to aim. Click to shoot! Destroy the asteroids before they escape.</p>
       <div class="game-panel">
         <div class="game-stats">
           <div class="stat-box">
@@ -340,90 +337,71 @@
           </div>
           <div class="stat-box">
             <div class="stat-label-g">Time Left</div>
-            <div class="stat-value" id="time">15</div>
+            <div class="stat-value" id="time">30</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label-g">Lives</div>
+            <div class="stat-value" id="lives">3</div>
           </div>
         </div>
-        <button id="start-btn" class="game-start-btn">&#9654; Start Game</button>
-        <div id="game-area">
-          <div id="target">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kuyper_target.svg/120px-Kuyper_target.svg.png" alt="Target" id="target-img" />
-          </div>
-          <div id="game-msg"></div>
-        </div>
+        <p class="game-controls-hint">Move mouse to aim · Click to fire · Don't let asteroids escape!</p>
+        <button id="start-btn" class="game-start-btn">🚀 Launch Game</button>
+        <canvas id="game-canvas"></canvas>
+        <div id="game-msg"></div>
       </div>
     </section>
 
-    <!-- Goals Section -->
     <section id="goals" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=48&h=48&fit=crop&crop=center" alt="Goals" class="section-icon-img" />
-        </div>
+        <div class="section-icon">🎯</div>
         <h2>My Goals</h2>
       </div>
       <div class="goals-grid">
         <div class="goal-card">
-          <div class="goal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=220&h=120&fit=crop&crop=center" alt="Learn Languages" class="goal-img" />
-          </div>
+          <div class="goal-icon-wrap g1">🖥️</div>
           <h4>Learn More Languages</h4>
-          <p>Continue learning JavaScript, Python, and explore new programming languages.</p>
+          <p>Continue learning JavaScript, Python, and explore new programming languages like Rust or Go.</p>
         </div>
         <div class="goal-card">
-          <div class="goal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=220&h=120&fit=crop&crop=center" alt="Build a Real Game" class="goal-img" />
-          </div>
+          <div class="goal-icon-wrap g2">🎮</div>
           <h4>Build a Real Game</h4>
-          <p>Create a fully polished game that other people can enjoy playing.</p>
+          <p>Create a fully polished game that other people can enjoy playing online.</p>
         </div>
         <div class="goal-card">
-          <div class="goal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=220&h=120&fit=crop&crop=center" alt="Launch a Website" class="goal-img" />
-          </div>
+          <div class="goal-icon-wrap g3">🌐</div>
           <h4>Launch a Website</h4>
-          <p>Build and publish a live website for a real purpose or audience.</p>
+          <p>Build and publish a live website for a real purpose or audience that people actually use.</p>
         </div>
         <div class="goal-card">
-          <div class="goal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=220&h=120&fit=crop&crop=center" alt="Tech Careers" class="goal-img" />
-          </div>
+          <div class="goal-icon-wrap g4">💼</div>
           <h4>Explore Tech Careers</h4>
           <p>Discover careers in technology, software development, and digital design.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="reveal">
       <div class="section-header">
-        <div class="section-icon">
-          <img src="https://images.unsplash.com/photo-1526554850534-7c78330d5f90?w=48&h=48&fit=crop&crop=center" alt="Contact" class="section-icon-img" />
-        </div>
+        <div class="section-icon">✉️</div>
         <h2>Contact Me</h2>
       </div>
       <div class="contact-content">
         <div class="contact-card">
-          <div class="contact-icon">
-            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop&crop=face" alt="Name" class="contact-icon-img" />
-          </div>
+          <div class="contact-icon">👤</div>
           <div class="contact-info">
             <div class="contact-label">Name</div>
             <div class="contact-value">Uter Ayoo</div>
           </div>
         </div>
         <div class="contact-card">
-          <div class="contact-icon">
-            <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=40&h=40&fit=crop&crop=center" alt="Email" class="contact-icon-img" />
-          </div>
+          <div class="contact-icon">📧</div>
           <div class="contact-info">
             <div class="contact-label">Email</div>
             <div class="contact-value">uter_ayoo@s.thevillageschool.com</div>
           </div>
         </div>
         <div class="contact-card">
-          <div class="contact-icon">
-            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=40&h=40&fit=crop&crop=center" alt="School" class="contact-icon-img" />
-          </div>
+          <div class="contact-icon">🏫</div>
           <div class="contact-info">
             <div class="contact-label">School</div>
             <div class="contact-value">The Village School</div>
@@ -435,7 +413,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-deco">✦ ★ ✦ ★ ✦</div>
     <p class="footer-name">Uter Ayoo</p>
