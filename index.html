@@ -1,426 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uter Ayoo | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uter Ayoo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-  <div id="particles"></div>
-
-  <div class="deco-shape shape1"></div>
-  <div class="deco-shape shape2"></div>
-  <div class="deco-shape shape3"></div>
-  <div class="deco-shape shape4"></div>
-  <div class="deco-shape shape5"></div>
-
-  <div class="music-player" id="musicPlayer">
-    <div class="music-icon-img">🎵</div>
-    <div class="music-info">
-      <span class="music-label" id="music-track-name">Chill Vibes</span>
-      <div class="music-bars" id="musicBars">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </div>
-    <div class="music-controls">
-      <button class="music-btn music-prev" id="prevTrack">&#9664;&#9664;</button>
-      <button class="music-btn music-play" id="musicToggle">&#9654; Play</button>
-      <button class="music-btn music-next" id="nextTrack">&#9654;&#9654;</button>
-    </div>
-    <audio id="bgMusic" loop>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    </audio>
-  </div>
-
-  <header class="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-      <div class="avatar-ring">
-        <div class="avatar-inner">UA</div>
-      </div>
-      <h1 class="hero-name">
-        <span id="typedName"></span><span class="cursor">|</span>
-      </h1>
-      <p class="hero-subtitle">Student Developer · Designer · Problem Solver</p>
-      <p class="hero-intro">Welcome to my professional portfolio — a showcase of creativity, code, and growth.</p>
-      <div class="hero-badges">
-        <span class="badge badge-icon"><span class="badge-icon-emoji">💻</span> Coder</span>
-        <span class="badge badge-icon"><span class="badge-icon-emoji">🎨</span> Designer</span>
-        <span class="badge badge-icon"><span class="badge-icon-emoji">🚀</span> Creator</span>
-        <span class="badge badge-icon"><span class="badge-icon-emoji">🎮</span> Gamer</span>
-      </div>
-      <a href="#about" class="hero-cta">Explore My Work ↓</a>
-    </div>
-    <div class="star star1">★</div>
-    <div class="star star2">✦</div>
-    <div class="star star3">★</div>
-    <div class="star star4">✦</div>
-    <div class="star star5">★</div>
-  </header>
-
-  <nav id="navbar">
-    <div class="nav-inner">
-      <span class="nav-logo">UA</span>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#game">Game</a>
-        <a href="#goals">Goals</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <section id="about" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">👤</div>
-        <h2>About Me</h2>
-      </div>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Hi! My name is <strong>Uter Ayoo</strong> and I am a passionate student at The Village School who loves coding, digital design, and creative technology. I enjoy building projects that combine problem-solving, logic, and imagination.</p>
-          <p style="margin-top:12px;">This portfolio showcases my work and growth as a student creator. I am always learning something new and pushing myself to build bigger and better things.</p>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-num">3+</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5+</div>
-            <div class="stat-label">Skills</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">1</div>
-            <div class="stat-label">School</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">📁</div>
-        <h2>Featured Projects</h2>
-      </div>
-      <div class="project-grid">
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <div class="project-img-placeholder scratch-bg">🎮</div>
-            <div class="project-img-overlay">
-              <span class="project-tool-tag">Scratch</span>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img class="profile-pic" src="images/aPnRBkv3N88O.jpg" alt="Uter Ayoo Profile">
             </div>
-          </div>
-          <h3>Scratch Game Project</h3>
-          <p>A game I designed using logic, animation, and interactive controls. I built custom sprites and programmed all the game rules from scratch.</p>
-          <div class="project-tools">
-            <span class="tool-tag">Scratch</span>
-          </div>
-          <a href="#" class="project-link">View Project →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <div class="project-img-placeholder python-bg">🐍</div>
-            <div class="project-img-overlay">
-              <span class="project-tool-tag">Python</span>
+            <div class="hero-text">
+                <h1>Uter Ayoo</h1>
+                <p class="subtitle">Student Developer | Creative Designer | Problem Solver</p>
+                <p class="intro">
+                    Welcome to my professional portfolio. I'm a passionate creator dedicated to building impactful digital experiences. This space showcases my journey through coding, design, and technology.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
-          </div>
-          <h3>Python Program</h3>
-          <p>A coding project that helped me practice variables, logic, loops, and debugging. I wrote clean, working code that solved a real problem.</p>
-          <div class="project-tools">
-            <span class="tool-tag">Python</span>
-          </div>
-          <a href="#" class="project-link">View Project →</a>
         </div>
+    </header>
 
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <div class="project-img-placeholder web-bg">🌐</div>
-            <div class="project-img-overlay">
-              <span class="project-tool-tag">HTML</span>
-              <span class="project-tool-tag">CSS</span>
-              <span class="project-tool-tag">JS</span>
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#music">Music</a>
+            <a href="#game">Game</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-user"></i>
+                <h2>About Me</h2>
             </div>
-          </div>
-          <h3>Portfolio Website</h3>
-          <p>A personal website created to present my skills, projects, and goals. Designed and built with HTML, CSS, and JavaScript.</p>
-          <div class="project-tools">
-            <span class="tool-tag">HTML</span>
-            <span class="tool-tag">CSS</span>
-            <span class="tool-tag">JavaScript</span>
-          </div>
-          <a href="#" class="project-link">View Project →</a>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="skills" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">⚡</div>
-        <h2>Skills</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">🌐</span> HTML</span>
-            <span>85%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">🎨</span> CSS</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">💛</span> JavaScript</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">🐍</span> Python</span>
-            <span>65%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">🐱</span> Scratch</span>
-            <span>90%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-label-wrap"><span class="skill-emoji">🧠</span> Problem Solving</span>
-            <span>88%</span>
-          </div>
-          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-        </div>
-      </div>
-      <div class="skills-tags">
-        <span>Debugging</span>
-        <span>Creative Design</span>
-        <span>Critical Thinking</span>
-        <span>Teamwork</span>
-        <span>Presentation</span>
-        <span>Digital Tools</span>
-      </div>
-    </section>
-
-    <section id="experience" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">📈</div>
-        <h2>Experience &amp; Growth</h2>
-      </div>
-      <p style="color:#94a3b8;margin-bottom:20px;">During this course, I learned how to plan projects, test ideas, fix errors, and improve my work over time.</p>
-
-      <div class="experience-columns">
-
-        <div>
-          <div class="exp-col-title have">
-            <div class="exp-col-title-dot"></div>
-            What I Have
-          </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot">💻</div>
-              <div class="timeline-content">
-                <h4>Built Coding Projects</h4>
-                <p>Used HTML, CSS, JavaScript, Python, and Scratch to build complete, working projects from start to finish.</p>
-              </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am Uter Ayoo, a student with a deep interest in the intersection of logic and creativity. My journey in technology is driven by a desire to solve complex problems through elegant code and thoughtful design.
+                    </p>
+                    <p>
+                        Whether I'm developing in Python, crafting responsive layouts with HTML and CSS, or exploring game logic, I strive to create projects that are both functional and visually engaging.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/9hmIMW8uxpQf.jpg" alt="Workspace" class="rounded-img">
+                </div>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot">🐛</div>
-              <div class="timeline-content">
-                <h4>Learned to Debug</h4>
-                <p>Developed the skill to identify, analyze, and fix errors in code efficiently and independently.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot">🎤</div>
-              <div class="timeline-content">
-                <h4>Practiced Presenting</h4>
-                <p>Learned how to explain and present my work clearly to others in a professional way.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot">🧩</div>
-              <div class="timeline-content">
-                <h4>Problem Solving Skills</h4>
-                <p>Grew as a logical thinker — breaking big problems into smaller steps and finding creative solutions.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot">🌐</div>
-              <div class="timeline-content">
-                <h4>My Own Portfolio Website</h4>
-                <p>Designed and built this website myself using HTML, CSS, and JavaScript to showcase my work.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div>
-          <div class="exp-col-title want">
-            <div class="exp-col-title-dot"></div>
-            What I Want to Get
-          </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot want-dot">⚛️</div>
-              <div class="timeline-content">
-                <h4>React &amp; Modern Frameworks</h4>
-                <p>Learn React and other modern JavaScript frameworks to build fast, interactive web apps.</p>
-              </div>
+        <section id="projects" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-code-branch"></i>
+                <h2>Featured Projects</h2>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot want-dot">🎮</div>
-              <div class="timeline-content">
-                <h4>Game Development Skills</h4>
-                <p>Dive deeper into game development using Unity or Godot to create real, polished games.</p>
-              </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/Q5SOmGCoTnjz.jpg" alt="Scratch Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Scratch Experience</h3>
+                        <p>A dynamic game built with complex logic and smooth animations to provide an engaging user experience.</p>
+                        <p class="tools"><strong>Tools:</strong> Scratch, Logic Design</p>
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/TZI7D3sVP5BS.jpg" alt="Python Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Advanced Python Systems</h3>
+                        <p>Developed custom scripts to automate tasks and process data, focusing on clean code and efficient algorithms.</p>
+                        <p class="tools"><strong>Tools:</strong> Python, Data Structures</p>
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/2T0oNUFM4Ukl.jpg" alt="Portfolio Site">
+                    </div>
+                    <div class="project-info">
+                        <h3>Professional Portfolio Website</h3>
+                        <p>A responsive, modern web application designed to showcase technical skills and creative projects.</p>
+                        <p class="tools"><strong>Tools:</strong> HTML5, CSS3, JavaScript</p>
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot want-dot">🤖</div>
-              <div class="timeline-content">
-                <h4>Artificial Intelligence</h4>
-                <p>Explore machine learning and AI to understand how smart technology works and how to build with it.</p>
-              </div>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-tools"></i>
+                <h2>Technical Skills</h2>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot want-dot">📱</div>
-              <div class="timeline-content">
-                <h4>Mobile App Development</h4>
-                <p>Learn to build mobile apps for iOS and Android so my projects can reach anyone, anywhere.</p>
-              </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skills-list">
+                        <span><i class="fab fa-html5"></i> HTML5</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-python"></i> Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span>Problem Solving</span>
+                        <span>Creative Design</span>
+                        <span>Project Planning</span>
+                        <span>Debugging</span>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot want-dot">☁️</div>
-              <div class="timeline-content">
-                <h4>Cloud &amp; Deployment</h4>
-                <p>Understand how to host and deploy real projects live on the internet for the world to use.</p>
-              </div>
+        </section>
+
+        <section id="music" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-music"></i>
+                <h2>Chill Vibes</h2>
             </div>
-          </div>
-        </div>
+            <p class="section-intro">Music is a huge part of my creative process. Here are some of my favorite tracks to code to.</p>
+            <div class="music-grid">
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/track/6T8cJz5lAqGer9GUHGyelE?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/track/6W614n8yLUeS3zsZSeBwyq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/track/7eJMfftS33KTjuF7lTsMCx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="music-card">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </section>
+        <section id="game" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-gamepad"></i>
+                <h2>The 2048 Challenge</h2>
+            </div>
+            <p class="section-intro">Take a break and test your strategy with this embedded 2048 game. Use your arrow keys to join the numbers!</p>
+            <div class="game-container">
+                <iframe src="https://play2048.co/" width="100%" height="500" frameborder="0" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></iframe>
+            </div>
+        </section>
 
-    <section id="game" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">🚀</div>
-        <h2>Rocket Shooter Game</h2>
-      </div>
-      <p style="color:#94a3b8;margin-bottom:4px;">Move your mouse to aim. Click to shoot! Destroy the asteroids before they escape.</p>
-      <div class="game-panel">
-        <div class="game-stats">
-          <div class="stat-box">
-            <div class="stat-label-g">Score</div>
-            <div class="stat-value" id="score">0</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-label-g">Time Left</div>
-            <div class="stat-value" id="time">30</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-label-g">Lives</div>
-            <div class="stat-value" id="lives">3</div>
-          </div>
-        </div>
-        <p class="game-controls-hint">Move mouse to aim · Click to fire · Don't let asteroids escape!</p>
-        <button id="start-btn" class="game-start-btn">🚀 Launch Game</button>
-        <canvas id="game-canvas"></canvas>
-        <div id="game-msg"></div>
-      </div>
-    </section>
+        <section id="contact" class="fade-in">
+            <div class="section-header">
+                <i class="fas fa-envelope"></i>
+                <h2>Let's Connect</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>uter_ayoo@s.thevillageschool.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/uterayoo-dev</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-placeholder">
+                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="btn btn-large">Send an Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="goals" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">🎯</div>
-        <h2>My Goals</h2>
-      </div>
-      <div class="goals-grid">
-        <div class="goal-card">
-          <div class="goal-icon-wrap g1">🖥️</div>
-          <h4>Learn More Languages</h4>
-          <p>Continue learning JavaScript, Python, and explore new programming languages like Rust or Go.</p>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Uter Ayoo. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/uterayoo-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:uter_ayoo@s.thevillageschool.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-        <div class="goal-card">
-          <div class="goal-icon-wrap g2">🎮</div>
-          <h4>Build a Real Game</h4>
-          <p>Create a fully polished game that other people can enjoy playing online.</p>
-        </div>
-        <div class="goal-card">
-          <div class="goal-icon-wrap g3">🌐</div>
-          <h4>Launch a Website</h4>
-          <p>Build and publish a live website for a real purpose or audience that people actually use.</p>
-        </div>
-        <div class="goal-card">
-          <div class="goal-icon-wrap g4">💼</div>
-          <h4>Explore Tech Careers</h4>
-          <p>Discover careers in technology, software development, and digital design.</p>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="reveal">
-      <div class="section-header">
-        <div class="section-icon">✉️</div>
-        <h2>Contact Me</h2>
-      </div>
-      <div class="contact-content">
-        <div class="contact-card">
-          <div class="contact-icon">👤</div>
-          <div class="contact-info">
-            <div class="contact-label">Name</div>
-            <div class="contact-value">Uter Ayoo</div>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">📧</div>
-          <div class="contact-info">
-            <div class="contact-label">Email</div>
-            <div class="contact-value">uter_ayoo@s.thevillageschool.com</div>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">🏫</div>
-          <div class="contact-info">
-            <div class="contact-label">School</div>
-            <div class="contact-value">The Village School</div>
-          </div>
-        </div>
-      </div>
-      <p class="contact-note">Feel free to reach out — I am always happy to connect and share my work!</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-deco">✦ ★ ✦ ★ ✦</div>
-    <p class="footer-name">Uter Ayoo</p>
-    <p>Student Developer Portfolio · The Village School</p>
-    <p class="footer-email">uter_ayoo@s.thevillageschool.com</p>
-    <div class="footer-deco">✦ ★ ✦ ★ ✦</div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
