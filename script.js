@@ -1,111 +1,250 @@
-// Uter Ayoo Portfolio - Interactive Features
+// UTER AYOO - CYBER PREMIUM PORTFOLIO
+// Pure JavaScript - No Dependencies
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Initialize AOS (Animate on Scroll)
-    AOS.init({
-        duration: 1000,
-        once: false,
-        mirror: true,
-        anchorPlacement: 'top-bottom',
-    });
-
-    // 2. Custom Cursor Logic
-    const cursor = document.querySelector('.cursor');
-    const follower = document.querySelector('.cursor-follower');
+    // ===== SMOOTH SCROLL NAVIGATION =====
+    const navLinks = document.querySelectorAll('.nav-link');
     
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-        
-        setTimeout(() => {
-            follower.style.left = e.clientX - 16 + 'px';
-            follower.style.top = e.clientY - 16 + 'px';
-        }, 50);
-    });
-
-    // Cursor scale on hover
-    const interactiveElements = document.querySelectorAll('a, button, .project-card-large, .skill-group');
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(4)';
-            cursor.style.background = 'rgba(59, 130, 246, 0.2)';
-            follower.style.transform = 'scale(1.5)';
-            follower.style.borderColor = 'rgba(59, 130, 246, 0.5)';
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.background = '#3b82f6';
-            follower.style.transform = 'scale(1)';
-            follower.style.borderColor = '#3b82f6';
-        });
-    });
-
-    // 3. Scroll Progress Bar
-    window.onscroll = function() { updateProgressBar() };
-
-    function updateProgressBar() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-        
-        // Navbar scroll effect
-        const nav = document.getElementById('main-nav');
-        if (winScroll > 50) {
-            nav.style.top = '10px';
-            nav.style.width = '95%';
-            nav.style.background = 'rgba(2, 6, 23, 0.95)';
-        } else {
-            nav.style.top = '20px';
-            nav.style.width = '90%';
-            nav.style.background = 'rgba(15, 23, 42, 0.8)';
-        }
-    }
-
-    // 4. Smooth Scrolling for Navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80;
                 window.scrollTo({
-                    top: target.offsetTop - 100,
+                    top: offsetTop,
                     behavior: 'smooth'
                 });
             }
         });
     });
 
-    // 5. Game Focus Helper
-    // Prevent arrow keys from scrolling the page when playing the game
-    const gameIframe = document.getElementById('game-iframe');
-    window.addEventListener("keydown", function(e) {
-        if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
-            // Only prevent if the mouse is over the game area or if it was recently clicked
-            const rect = document.getElementById('game').getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                // Check if user is near the game section
-                // We don't preventDefault globally to allow normal scrolling elsewhere
+    // ===== SCROLL ANIMATIONS =====
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        observer.observe(section);
+    });
+
+    // ===== ACTIVE NAV LINK ON SCROLL =====
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('section');
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // ===== PARALLAX EFFECT =====
+    const profileAvatar = document.querySelector('.profile-avatar');
+    
+    window.addEventListener('scroll', () => {
+        if (profileAvatar) {
+            const scrollY = window.pageYOffset;
+            profileAvatar.style.transform = `translateY(${scrollY * 0.3}px)`;
+        }
+    });
+
+    // ===== SKILL BARS ANIMATION =====
+    const skillBars = document.querySelectorAll('.skill-progress');
+    let skillsAnimated = false;
+
+    const skillsSection = document.querySelector('.skills-section');
+    if (skillsSection) {
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !skillsAnimated) {
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0';
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1.5s ease-out';
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                    skillsAnimated = true;
+                }
+            });
+        }, { threshold: 0.5 });
+
+        skillsObserver.observe(skillsSection);
+    }
+
+    // ===== BUTTON HOVER EFFECTS =====
+    const buttons = document.querySelectorAll('.cta-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px)';
+            this.style.boxShadow = '0 10px 30px rgba(0, 255, 136, 0.3)';
+        });
+
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'none';
+        });
+    });
+
+    // ===== PROJECT CARD HOVER =====
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0 20px 50px rgba(0, 255, 136, 0.2)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.boxShadow = 'none';
+        });
+    });
+
+    // ===== STAT COUNTER ANIMATION =====
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let statsAnimated = false;
+
+    const aboutSection = document.querySelector('.about-section');
+    if (aboutSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !statsAnimated) {
+                    statNumbers.forEach(stat => {
+                        const finalValue = stat.textContent;
+                        if (finalValue.includes('+')) {
+                            const num = parseInt(finalValue);
+                            let current = 0;
+                            const increment = Math.ceil(num / 30);
+                            
+                            const counter = setInterval(() => {
+                                current += increment;
+                                if (current >= num) {
+                                    stat.textContent = num + '+';
+                                    clearInterval(counter);
+                                } else {
+                                    stat.textContent = current;
+                                }
+                            }, 50);
+                        }
+                    });
+                    statsAnimated = true;
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statsObserver.observe(aboutSection);
+    }
+
+    // ===== SCROLL PROGRESS INDICATOR =====
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        
+        // You can use this for a progress bar if needed
+        document.documentElement.style.setProperty('--scroll-percent', scrollPercent + '%');
+    });
+
+    // ===== TYPEWRITER EFFECT FOR HERO =====
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const originalText = heroTitle.innerText;
+        heroTitle.innerText = '';
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (charIndex < originalText.length) {
+                if (originalText[charIndex] === '\n') {
+                    heroTitle.innerHTML += '<br>';
+                } else {
+                    heroTitle.innerHTML += originalText[charIndex];
+                }
+                charIndex++;
+                setTimeout(typeWriter, 50);
             }
         }
-    }, false);
 
-    // 6. Typing Effect for Hero Subtitle (Optional enhancement)
-    const subtitle = document.querySelector('.subtitle');
-    const text = subtitle.innerText;
-    subtitle.innerText = '';
-    let i = 0;
-    
-    function typeWriter() {
-        if (i < text.length) {
-            subtitle.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
-        }
+        setTimeout(typeWriter, 500);
     }
-    
-    // Start typing effect after a small delay
-    setTimeout(typeWriter, 1000);
 
-    console.log("Uter Ayoo Portfolio - Systems Operational.");
+    // ===== RANDOM GLOW EFFECT =====
+    const titleLines = document.querySelectorAll('.title-line');
+    
+    setInterval(() => {
+        titleLines.forEach(line => {
+            const randomGlow = Math.random() * 40 + 20;
+            line.style.textShadow = `0 0 ${randomGlow}px rgba(0, 255, 136, 0.5)`;
+        });
+    }, 2000);
+
+    // ===== GAME SECTION FOCUS =====
+    const gameFrame = document.getElementById('game-frame');
+    const gameSection = document.getElementById('game');
+
+    if (gameFrame && gameSection) {
+        gameSection.addEventListener('mouseenter', () => {
+            document.body.style.overflow = 'hidden';
+        });
+
+        gameSection.addEventListener('mouseleave', () => {
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    // ===== MOBILE MENU TOGGLE (Future Enhancement) =====
+    const navMenu = document.querySelector('.nav-menu');
+    if (window.innerWidth <= 768 && navMenu) {
+        navMenu.style.display = 'none';
+    }
+
+    // ===== CONSOLE MESSAGE =====
+    console.log('%c🚀 UTER AYOO PORTFOLIO LOADED', 'color: #00ff88; font-size: 16px; font-weight: bold;');
+    console.log('%cBuilt with pure HTML, CSS, and JavaScript', 'color: #0088ff; font-size: 12px;');
+    console.log('%cLet\'s build something amazing together!', 'color: #ff0088; font-size: 12px;');
 });
+
+// ===== PERFORMANCE OPTIMIZATION =====
+// Lazy load images
+if ('IntersectionObserver' in window) {
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+}

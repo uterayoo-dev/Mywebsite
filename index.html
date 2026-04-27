@@ -3,336 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uter Ayoo | Digital Portfolio & Creative Lab</title>
-    <!-- External Fonts & Icons -->
+    <title>UTER AYOO | DIGITAL ARCHITECT & CREATIVE TECHNOLOGIST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- AOS for Scroll Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <!-- Progress Bar -->
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
-
-    <!-- Header Section -->
-    <header class="hero">
-        <div class="hero-bg-overlay"></div>
-        <div class="hero-content">
-            <div class="profile-wrapper" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="profile-circle">
-                    <img class="profile-pic" src="images/ua_logo.png" alt="Uter Ayoo Logo">
-                </div>
-                <div class="status-badge">
-                    <span class="pulse"></span> Available for Projects
-                </div>
-            </div>
-            <div class="hero-text">
-                <h1 data-aos="fade-up" data-aos-delay="200">Uter Ayoo</h1>
-                <p class="subtitle" data-aos="fade-up" data-aos-delay="400">Student Developer • Creative Designer • Systems Thinker</p>
-                <p class="intro" data-aos="fade-up" data-aos-delay="600">
-                    I am a forward-thinking student developer dedicated to the craft of digital creation. By blending technical precision with creative intuition, I build applications that are as functional as they are beautiful. My journey is defined by constant learning and a relentless drive to solve complex problems through code.
-                </p>
-                <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
-                    <a href="#projects" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
-                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="btn btn-glass">Let's Connect</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <span>Scroll Down</span>
-        </div>
-    </header>
-
+    <!-- Animated Background -->
+    <div class="background-grid"></div>
+    <div class="background-glow"></div>
+    
     <!-- Navigation -->
-    <nav id="main-nav">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">UA<span>.</span></div>
-            <div class="nav-links">
-                <a href="#about" class="nav-item">About</a>
-                <a href="#projects" class="nav-item">Projects</a>
-                <a href="#skills" class="nav-item">Skills</a>
-                <a href="#music" class="nav-item">Vibes</a>
-                <a href="#game" class="nav-item">Lab</a>
-                <a href="#contact" class="nav-item">Contact</a>
+            <div class="logo-brand">
+                <span class="logo-text">UA</span>
+                <span class="logo-dot">.</span>
             </div>
-            <div class="nav-socials">
-                <a href="https://github.com/uterayoo-dev" target="_blank"><i class="fab fa-github"></i></a>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#music" class="nav-link">VIBES</a></li>
+                <li><a href="#game" class="nav-link">PLAY</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://github.com/uterayoo-dev" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <!-- About Section -->
-        <section id="about">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">01. Discovery</span>
-                <h2>The Mind Behind the Code</h2>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <h1 class="hero-title">
+                    <span class="title-line">UTER</span>
+                    <span class="title-line">AYOO</span>
+                </h1>
+                <p class="hero-subtitle">DIGITAL ARCHITECT • CREATIVE TECHNOLOGIST • SYSTEMS DESIGNER</p>
+                <p class="hero-description">
+                    I build the future. Every line of code, every pixel, every interaction is a deliberate choice. 
+                    I'm not just a developer—I'm a creator who thinks in systems, codes in poetry, and designs for impact.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button primary">EXPLORE MY WORK</a>
+                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="cta-button secondary">GET IN TOUCH</a>
+                </div>
             </div>
+            <div class="hero-visual">
+                <div class="profile-avatar">
+                    <img src="images/ua_logo.png" alt="UA Logo">
+                </div>
+                <div class="floating-cards">
+                    <div class="card code">CODE</div>
+                    <div class="card design">DESIGN</div>
+                    <div class="card create">CREATE</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL TO DISCOVER</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">WHO IS UTER AYOO?</h2>
+                <div class="title-underline"></div>
+            </div>
+            
             <div class="about-grid">
-                <div class="about-text" data-aos="fade-up">
-                    <p class="highlight-text">
-                        Hello, I'm Uter Ayoo. I don't just write code; I architect digital solutions.
-                    </p>
-                    <p>
-                        My fascination with technology began with a simple question: "How does it work?" That curiosity led me to master the building blocks of the web. Today, I specialize in creating responsive, user-centric experiences that bridge the gap between human needs and technical possibilities.
-                    </p>
-                    <p>
-                        I believe that great software is the result of empathy and logic. Whether I'm debugging a complex Python script or fine-tuning a CSS animation, my goal is always the same: to create something that makes an impact. I am currently a student at The Village School, where I continue to push the boundaries of what I can create.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
+                <div class="about-left">
+                    <div class="about-content">
+                        <h3 class="about-subtitle">The Journey</h3>
+                        <p class="about-text">
+                            I am Uter Ayoo, a student developer and creative technologist at The Village School. My journey began with a simple curiosity: 
+                            "How does it work?" That question transformed into a passion for building digital experiences that matter.
+                        </p>
+                        <p class="about-text">
+                            I specialize in bridging the gap between aesthetics and functionality. Whether I'm architecting a Python backend system, 
+                            crafting responsive web interfaces, or designing interactive experiences, I approach every project with the same philosophy: 
+                            excellence is non-negotiable.
+                        </p>
+                        <p class="about-text">
+                            My work spans multiple disciplines—from game design in Scratch to full-stack web development. I believe that great technology 
+                            is invisible; it serves the user so seamlessly that they forget they're using it. That's what I build.
+                        </p>
+                    </div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-box">
                             <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <span class="stat-label">Projects Delivered</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-box">
                             <span class="stat-number">4+</span>
                             <span class="stat-label">Languages Mastered</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-box">
                             <span class="stat-number">100%</span>
                             <span class="stat-label">Dedication</span>
                         </div>
+                        <div class="stat-box">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Passion</span>
+                        </div>
                     </div>
                 </div>
-                <div class="about-visual" data-aos="fade-left">
-                    <div class="image-stack">
-                        <img src="images/9hmIMW8uxpQf.jpg" alt="Developer Workspace" class="img-main">
-                        <div class="image-accent"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">02. Creation</span>
-                <h2>Featured Projects</h2>
-            </div>
-            <div class="project-showcase">
-                <!-- Project 1 -->
-                <div class="project-card-large" data-aos="fade-up">
-                    <div class="project-image">
-                        <img src="images/Q5SOmGCoTnjz.jpg" alt="Scratch Game">
-                        <div class="project-overlay">
-                            <a href="https://github.com/uterayoo-dev" target="_blank" class="view-btn">View Repository</a>
-                        </div>
+                <div class="about-right">
+                    <div class="about-image-wrapper">
+                        <img src="images/9hmIMW8uxpQf.jpg" alt="Developer at work" class="about-image">
+                        <div class="image-overlay"></div>
                     </div>
-                    <div class="project-content">
-                        <h3>Advanced Logic Scratch Engine</h3>
-                        <p>
-                            A sophisticated game engine built within the Scratch environment. This project pushed the limits of block-based programming by implementing custom physics, complex state management, and an adaptive difficulty system. It serves as a testament to my ability to think logically and creatively within any technical constraint.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/Q5SOmGCoTnjz.jpg" alt="Scratch Game Engine">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">GAME DESIGN</span>
+                        <h3 class="project-title">Advanced Logic Scratch Engine</h3>
+                        <p class="project-description">
+                            A sophisticated game engine built within the Scratch environment. This project demonstrates advanced logic implementation, 
+                            custom physics systems, and adaptive difficulty algorithms. It pushed the boundaries of block-based programming and showcases 
+                            my ability to think systematically within creative constraints.
                         </p>
-                        <div class="project-tags">
+                        <div class="project-tech">
                             <span>Scratch</span>
-                            <span>Game Design</span>
-                            <span>Logic Architecture</span>
+                            <span>Game Logic</span>
+                            <span>Physics</span>
+                            <span>UI/UX</span>
                         </div>
-                        <a href="https://github.com/uterayoo-dev" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Explore Source
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link">
+                            VIEW ON GITHUB <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card-large reverse" data-aos="fade-up">
+                <div class="project-card featured">
                     <div class="project-image">
                         <img src="images/TZI7D3sVP5BS.jpg" alt="Python Systems">
-                        <div class="project-overlay">
-                            <a href="https://github.com/uterayoo-dev" target="_blank" class="view-btn">View Repository</a>
-                        </div>
+                        <div class="project-overlay"></div>
                     </div>
-                    <div class="project-content">
-                        <h3>Python Automation & Data Systems</h3>
-                        <p>
-                            A collection of Python scripts designed to automate repetitive workflows and process large datasets. This project focuses on back-end efficiency, utilizing libraries to handle data parsing, file management, and API integrations. It showcases my proficiency in writing clean, modular, and scalable Python code.
+                    <div class="project-info">
+                        <span class="project-tag">BACKEND SYSTEMS</span>
+                        <h3 class="project-title">Python Automation & Data Systems</h3>
+                        <p class="project-description">
+                            A comprehensive collection of Python scripts designed for workflow automation and data processing. This project showcases 
+                            my proficiency in writing clean, modular, and scalable backend code. Features include API integrations, file management, 
+                            data parsing, and custom algorithms for complex computational tasks.
                         </p>
-                        <div class="project-tags">
+                        <div class="project-tech">
                             <span>Python</span>
                             <span>Automation</span>
                             <span>Data Processing</span>
+                            <span>APIs</span>
                         </div>
-                        <a href="https://github.com/uterayoo-dev" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Explore Source
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link">
+                            VIEW ON GITHUB <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card-large" data-aos="fade-up">
+                <div class="project-card featured">
                     <div class="project-image">
-                        <img src="images/2T0oNUFM4Ukl.jpg" alt="Portfolio Site">
-                        <div class="project-overlay">
-                            <a href="https://github.com/uterayoo-dev" target="_blank" class="view-btn">View Repository</a>
-                        </div>
+                        <img src="images/2T0oNUFM4Ukl.jpg" alt="Portfolio Website">
+                        <div class="project-overlay"></div>
                     </div>
-                    <div class="project-content">
-                        <h3>Next-Gen Portfolio Architecture</h3>
-                        <p>
-                            The very site you are browsing. Built with a focus on high-performance animations and responsive design principles. This project utilizes modern CSS architectures (Flexbox, Grid, Variables) and vanilla JavaScript to create a seamless, interactive experience without the overhead of heavy frameworks.
+                    <div class="project-info">
+                        <span class="project-tag">WEB DEVELOPMENT</span>
+                        <h3 class="project-title">Next-Generation Portfolio Architecture</h3>
+                        <p class="project-description">
+                            The very site you're browsing right now. Built with a focus on high-performance animations, responsive design, and 
+                            cutting-edge CSS techniques. This project utilizes modern web standards (CSS Grid, Flexbox, CSS Variables) and vanilla 
+                            JavaScript to create a seamless, interactive experience without heavy framework overhead.
                         </p>
-                        <div class="project-tags">
+                        <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>UI/UX</span>
+                            <span>Animations</span>
                         </div>
-                        <a href="https://github.com/uterayoo-dev" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Explore Source
+                        <a href="https://github.com/uterayoo-dev" target="_blank" class="project-link">
+                            VIEW ON GITHUB <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">03. Expertise</span>
-                <h2>Technical Proficiency</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">TECHNICAL ARSENAL</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="skills-wrapper">
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Frontend Dev</h3>
-                    <p>Crafting responsive, high-performance interfaces using modern web standards.</p>
-                    <ul class="skill-list-items">
-                        <li>HTML5 & Semantic Web</li>
-                        <li>CSS3 (Grid/Flexbox/Animations)</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-icon"><i class="fab fa-python"></i></div>
-                    <h3>Backend Logic</h3>
-                    <p>Building the brains behind the application with robust server-side scripting.</p>
-                    <ul class="skill-list-items">
-                        <li>Python Programming</li>
-                        <li>Algorithm Development</li>
-                        <li>Data Structures</li>
-                        <li>API Integration</li>
-                    </ul>
-                </div>
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-icon"><i class="fas fa-pen-nib"></i></div>
-                    <h3>Creative Design</h3>
-                    <p>Ensuring that every project is visually striking and intuitively navigable.</p>
-                    <ul class="skill-list-items">
-                        <li>UI/UX Principles</li>
-                        <li>Digital Illustration</li>
-                        <li>Brand Identity</li>
-                        <li>Prototyping</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- Music Section -->
-        <section id="music">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">04. Inspiration</span>
-                <h2>Curated Soundscapes</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3 & Animations</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">Backend & Systems</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Structures</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Algorithm Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 84%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">API Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">Creative & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Game Design Logic</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Problem Solving</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Creative Thinking</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 91%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="section-desc" data-aos="fade-up">
-                Every line of code I write is fueled by a soundtrack. These are the tracks that define my creative process and keep me focused during long development sessions.
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">SONIC INSPIRATION</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="section-description">
+                Every creative breakthrough is powered by the perfect soundtrack. These tracks define my workflow and fuel my passion for building.
             </p>
+
             <div class="music-grid">
-                <div class="music-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="music-info">
+                <div class="music-card">
+                    <div class="music-header">
                         <h4>God's Plan</h4>
                         <span>Drake</span>
                     </div>
                     <iframe src="https://open.spotify.com/embed/track/6T8cJz5lAqGer9GUHGyelE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-                <div class="music-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="music-info">
+                <div class="music-card">
+                    <div class="music-header">
                         <h4>Blue</h4>
                         <span>Yung Kai</span>
                     </div>
                     <iframe src="https://open.spotify.com/embed/track/6W614n8yLUeS3zsZSeBwyq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-                <div class="music-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="music-info">
+                <div class="music-card">
+                    <div class="music-header">
                         <h4>Death Bed</h4>
                         <span>Powfu</span>
                     </div>
                     <iframe src="https://open.spotify.com/embed/track/7eJMfftS33KTjuF7lTsMCx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-                <div class="music-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="music-info">
+                <div class="music-card">
+                    <div class="music-header">
                         <h4>Deep Focus Lofi</h4>
                         <span>Curated Playlist</span>
                     </div>
                     <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Game Section -->
-        <section id="game">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">05. The Lab</span>
-                <h2>Interactive Challenge</h2>
+    <!-- Game Section -->
+    <section id="game" class="game-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">STRATEGIC CHALLENGE</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="game-wrapper" data-aos="fade-up">
-                <div class="game-info">
-                    <h3>Strategic Thinking: 2048</h3>
+
+            <div class="game-wrapper">
+                <div class="game-description">
+                    <h3>2048: The Strategic Game</h3>
                     <p>
-                        Great development requires foresight and strategy—much like a game of 2048. Use your arrow keys to slide the tiles. When two tiles with the same number touch, they merge into one! Can you reach the 2048 tile?
+                        Strategy is at the heart of everything I do. In 2048, like in development, every move matters. 
+                        Use your arrow keys to slide tiles. When two tiles with the same number touch, they merge. 
+                        Can you reach 2048? This game mirrors the problem-solving mindset I bring to every project.
                     </p>
-                    <div class="game-controls-hint">
-                        <span><i class="fas fa-keyboard"></i> Use Arrow Keys</span>
+                    <div class="game-controls">
+                        <span><i class="fas fa-arrow-up"></i> UP</span>
+                        <span><i class="fas fa-arrow-down"></i> DOWN</span>
+                        <span><i class="fas fa-arrow-left"></i> LEFT</span>
+                        <span><i class="fas fa-arrow-right"></i> RIGHT</span>
                     </div>
                 </div>
-                <div class="game-frame">
-                    <!-- Fixed: Using a more reliable 2048 embed -->
-                    <iframe src="https://play2048.co/" id="game-iframe" title="2048 Game"></iframe>
+                <div class="game-container">
+                    <iframe src="https://play2048.co/" title="2048 Game" id="game-frame"></iframe>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header" data-aos="fade-right">
-                <span class="section-tag">06. Connection</span>
-                <h2>Let's Build Something Great</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">LET'S BUILD TOGETHER</h2>
+                <div class="title-underline"></div>
             </div>
-            <div class="contact-container" data-aos="fade-up">
-                <div class="contact-card">
-                    <div class="contact-header">
-                        <div class="contact-icon"><i class="fas fa-paper-plane"></i></div>
-                        <h3>Get In Touch</h3>
-                        <p>I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open!</p>
-                    </div>
-                    <div class="contact-links">
-                        <a href="mailto:uter_ayoo@s.thevillageschool.com" class="contact-link-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>uter_ayoo@s.thevillageschool.com</span>
-                        </a>
-                        <a href="https://github.com/uterayoo-dev" target="_blank" class="contact-link-item">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/uterayoo-dev</span>
-                        </a>
-                    </div>
-                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="btn btn-primary btn-full">Send Message</a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always looking for new opportunities to collaborate, create, and push the boundaries of what's possible. 
+                        Whether you have a project in mind, want to discuss technology, or just want to connect—I'd love to hear from you.
+                    </p>
+                    <p>
+                        My inbox is always open. Let's create something extraordinary together.
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <a href="mailto:uter_ayoo@s.thevillageschool.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>uter_ayoo@s.thevillageschool.com</span>
+                    </a>
+                    <a href="https://github.com/uterayoo-dev" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/uterayoo-dev</span>
+                    </a>
+                </div>
+
+                <a href="mailto:uter_ayoo@s.thevillageschool.com" class="cta-button primary large">SEND MESSAGE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">UA<span>.</span></div>
-            <p>Designed & Built by Uter Ayoo &copy; 2026</p>
+            <div class="footer-brand">
+                <span class="logo-text">UA</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <p>Designed & Built by Uter Ayoo | © 2026 All Rights Reserved</p>
             <div class="footer-socials">
                 <a href="https://github.com/uterayoo-dev" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:uter_ayoo@s.thevillageschool.com"><i class="fas fa-envelope"></i></a>
@@ -340,8 +445,6 @@
         </div>
     </footer>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
