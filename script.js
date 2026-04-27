@@ -1,7 +1,7 @@
 // Modern Portfolio Interactivity
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Smooth scrolling for navigation links
+    // 1. Smoothe scrolling for navigation links
     const navLinks = document.querySelectorAll('nav a');
     
     navLinks.forEach(link => {
